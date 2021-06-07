@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "autoRedirect",
+    "description": "Primeira extensão",
+    "author": "Emerson Stark",
+    "browser_action": {
+   	 "default_title": "autoRedirect",
+   	 "default_popup": "index.html",
+   	 "default_icon": "goal.png"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "permissions": [
+        "webRequest",
+            "*://facebook.com/*",
+            "*://www.facebook.com/*",
+            "*://www.instagram.com/*",
+        "webRequestBlocking"
+    ]
+}
